@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>GM DESIGNING</title>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+<link rel="stylesheet" href="/style.css">
+</head>
+
+<body>
+<h2>Gm DESIGNING </h2>
+<p>Change image every 2 seconds:</p>
+
+<div class="slideshow-container">
+
+<div class="mySlides fade">
+  <div class="numbertext">1 / 3</div>
+  <img src="./Images/1.jpg" style="width:100%">
+  <div class="text"> GM DESIGNING</div>
+</div>
+
+<div class="mySlides fade">
+  <div class="numbertext">2 / 3</div>
+  <img src="./Images/2.jpg" style="width:100%">
+  <div class="text"> GM DESIGNING</div>
+</div>
+
+<div class="mySlides fade">
+  <div class="numbertext">3 / 3</div>
+  <img src="./Images/3.jpg" style="width:100%">
+  <div class="text"> GM DESIGNING</div>
+</div>
+
+</div>
+<br>
+
+<div style="text-align:center">
+  <span class="dot"></span> 
+  <span class="dot"></span> 
+  <span class="dot"></span> 
+</div>
+
+<script>
+let slideIndex = 0;
+showSlides();
+
+function showSlides() {
+  let i;
+  let slides = document.getElementsByClassName("mySlides");
+  let dots = document.getElementsByClassName("dot");
+  for (i = 0; i < slides.length; i++) {
+    slides[i].style.display = "none";  
+  }
+  slideIndex++;
+  if (slideIndex > slides.length) {slideIndex = 1}    
+  for (i = 0; i < dots.length; i++) {
+    dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";  
+  dots[slideIndex-1].className += " active";
+  setTimeout(showSlides, 2000); // Change image every 2 seconds
+}
+</script>
+
+  <header class="head">
+    <div class="top-bar">
+       <div class="logo">
+         <img src="/Images/GM.jpg">
+       </div>
+       <div class="heading">
+         <h1 class="title"> GM DESIGNS</h1>
+       </div>
+       <div class="location">
+             <p class="deliver-to">Deliver to</p>
+             <div class="icon">
+                 <i class="fa-solid fa-location-dot"></i>
+                 <p class="state">Tamilnadu</p>
+             </div>
+       </div>
+
+    </div>
+  </header>
+  
+  
+  <div class="frame">
+     <a href="/Frame.html"><img src="/Images/Frame5.jpeg" height="120px"></a>
+     <a href="/Frame.html"><img src="/Images/Frame4.jpeg" height="120px"></a>
+     <a href="/Frame.html"><img src="/Images/Frame6.jpeg" height="120px"></a>
+     <h4 class="frame-h4">FRAMES</h4>
+  </div>
+  <hr>
+  
+  
+  <div class="resine">
+     <a href="/Resine.html"><img src="/Images/Resine1.jpeg" height="120px"></a>
+     <a href="/Resine.html"><img src="/Images/Resine2.jpeg" height="120px"></a>
+     <a href="/Resine.html"><img src="/Images/Resine6.jpeg" height="120px"></a>
+     <h4 class="resine-h4">RESIN</h4>
+  </div>
+  <hr>
+  
+  
+  <div class="bday">
+     <a href="/1bday.html"><img src="/Images/1bday3.jpeg" height="120px"></a>
+     <a href="/1bday.html"><img src="/Images/1bday2.jpeg" height="120px"></a>
+     <a href="/1bday.html"><img src="/Images/1bday5.jpeg" height="120px"></a>
+     <a href="/1bday.html"><img src="/Images/1bday1.jpeg" height="120px"></a>
+     <h4 class="bday-h4">1st BIRTHDAY DECORATION</h4>
+  </div>
+  <hr>
+  
+  <div class="lp">
+     <a href="/Lp.html"><img src="/Images/Lp4.jpeg" height="120px"></a>
+     <a href="/Lp.html"><img src="/Images/Lp2.jpeg" height="120px"></a>
+     <a href="/Lp.html"><img src="/Images/Lp3.jpeg" height="120px"></a>
+     <a href="/Lp.html"><img src="/Images/Lp6.jpeg" height="120px"></a>
+     <h4 class="lp-h4">LOVE PROPOSAL ARRANGEMENTS</h4>
+  </div>
+  <hr>
+  
+  
+  <div class="dj">
+     <a href="/Dj.html"><img src="/Images/Dj6.jpeg" height="120px"></a>
+     <a href="/Dj.html"><img src="/Images/Dj3.jpeg" height="120px"></a>
+     <a href="/Dj.html"><img src="/Images/Dj4.jpeg" height="120px"></a>
+     <a href="/Dj.html"><img src="/Images/Dj2.jpeg" height="120px"></a>
+     <h4 class="dj-h4">DJ EVENTS</h4>
+  </div>
+  <hr>
+  
+  <div class="sd">
+
+     <a href="/Sd.html"><img src="/Images/Sd5.jpg" height="120px"></a>
+     <a href="/Sd.html"><img src="/Images/Sd1.jpg" height="120px"></a>
+     <h4 class="sd-h4">STAGE DECORATION</h4>
+  </div>
+  <hr>
+  
+<table cellspacing="10" class="table">
+
+ <tr>
+   <td>
+   <img src="/Images/Face.png" height="110">
+   </td>
+   
+   
+   <td>
+   <h3 class="name">GOKULA KRISHNAN</h3>
+   <p class="p">Founder of GM DESIGNS</p>
+   <p class="p"><i> We will work hard to fulfill your requirements.</i></p>
+   </td>
+ </tr>
+</table>
+  
+  
+  
+  
+<!--
+  <div id="myDIV">
+    
+  </div>
+-->
+  
+<footer>
+      <br>
+    <!--<a href="Aboutus.html">About us</a>-->
+      <h2 class="about-h2">ABOUT</h2>
+      <br>
+      <p class="about"> GM Designs is a small homemade Company running by Mr.Gokul. Here you can buy frames, resin, etc., We also decorat for your birthday events, love proposal and many more to make your day special. We need your help to grow. So please support us. Make your house beautiful with GM designs products</p>
+      <br>
+      <hr>
+      <br>
+      <h2 class="contact-h2"> CONTACT ME</h2>
+      <br>
+      <h1 class="contact">+919087298135</h1>
+      <br>
+      <hr>
+      <br>
+      <h2 class="gmail-h2">Gmail</h2>
+      <br>
+      <h1 class="gmail"> gmdesigner690@gmail.com</h1>
+      <br>
+      <hr>
+      <br>
+      <h2 class="follow-h2"> FOLLOW US</h2>
+      <br>
+      <br>
+ 
+ <div class="fotter-icons">
+    <div class="fotter-icons-1">
+      <a href="https://wa.link/1topbt"><i class="fa-brands fa-whatsapp fa-2xl" style="color: #ffffff;"></i></a>
+    </div>
+    <div class="fotter-icons-1">
+      <a href="https://instagram.com/gm_designer_1?utm_source=qr&igshid=MzNlNGNkZWQ4Mg%3D%3D" ><i class="fa-brands fa-instagram fa-2xl" style="color: #ffffff;"></i></a>
+    </div>
+    <div class="fotter-icons-1">
+      <a href="https://www.facebook.com/profile.php?id=61550232027361&mibextid=ZbWKwL"><i class="fa-brands fa-facebook fa-2xl" style="color: #ffffff;"></i></a>
+    </div>
+    <div class="fotter-icons-1">
+      <a href="https://t.me/+919087298135"><i class="fa-brands fa-telegram fa-2xl" style="color: #ffffff;"></i></a>
+    </div>
+    <div class="fotter-icons-1">
+      <a href="https://gmdesigner690@gmail.com"> <i class="fa-solid fa-envelope fa-2xl" style="color: #ffffff;"></i></a>
+    </div>
+    <div class="fotter-icons-1">
+      <a href="tel:+919087298135"><i class="fa-solid fa-phone fa-2xl" style="color: #ffffff;"></i></a>
+    </div>
+ </div>
+    
+    
+    
+    
+    
+  </div>
+</footer>
+</body>
+</html>
